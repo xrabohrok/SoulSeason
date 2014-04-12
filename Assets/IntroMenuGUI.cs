@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
-
 public class IntroMenuGUI : MonoBehaviour {
 
     const int FIRST_LEVEL = 1;
@@ -14,8 +12,11 @@ public class IntroMenuGUI : MonoBehaviour {
     public float spacing = 4f;
     public float TitleHeight = .03f;
     public float TitleScale = 1f;
+    public float fadeOutSpeed = 0.4f;
+    public Texture2D fadeTexture;
 
     private Rect TitlePos;
+    private float alpha = 0.001f;
 
     void OnGUI()
     {
@@ -38,9 +39,9 @@ public class IntroMenuGUI : MonoBehaviour {
 
         if (pushedNewGame)
         {
-            if (FadeOut())
-                Debug.Log("FistLevelGo");
-            //load FirstLevel
+            alpha = MenuFade.FadeOut(fadeOutSpeed, fadeTexture, alpha);
+            if (alpha >= 1)
+                Application.LoadLevel(1);
         }
     }
 
@@ -51,28 +52,6 @@ public class IntroMenuGUI : MonoBehaviour {
 
 
 
-    //Fade Screen, based on Griffo's answer
-    //http://answers.unity3d.com/questions/341350/how-to-fade-out-a-scene.html
-    public Texture2D fadeTexture;
-    float fadeSpeed = 0.2f;
-    float drawDepth = -1000;
- 
-    private float alpha = 0.001f; 
-    private float fadeDir = 1;
 
-    bool FadeOut(){
- 
-        alpha += fadeDir * fadeSpeed * Time.deltaTime;  
-        alpha = Mathf.Clamp01(alpha);
-
-        Color temp = new Color(GUI.color.r, GUI.color.g, GUI.color.b, alpha);
-        GUI.color = temp;
- 
-        GUI.depth = (int)drawDepth;
- 
-        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), fadeTexture);
-
-        return alpha == .000f || alpha == 1.00;
-    }
 
 }
