@@ -5,11 +5,13 @@ public class IntroMenuGUI : MonoBehaviour {
 
     const int FIRST_LEVEL = 1;
     bool pushedNewGame = false;
+    bool pushedQuit = false;
+    bool creditsPushed = false;
 
     public Texture2D title;
     public float buttonWidthPercent = .20f;
     public float buttonHeightPercent = .05f;
-    public float spacing = 4f;
+    public float spacing = 10f;
     public float TitleHeight = .03f;
     public float TitleScale = 1f;
     public float fadeOutSpeed = 0.4f;
@@ -30,24 +32,48 @@ public class IntroMenuGUI : MonoBehaviour {
         float buttonWidth = Screen.width * buttonWidthPercent;
         float buttonHeight = Screen.height * buttonHeightPercent;
 
-        if (GUI.Button(new Rect(Screen.width / 2 - buttonWidth/2, buttonHeight * 4, buttonWidth , buttonHeight), "New Game"))
+        if (GUI.Button(new Rect(Screen.width / 2 - buttonWidth/2, buttonHeight * 5, buttonWidth , buttonHeight), "New Game"))
         {
             if (NoOtherButtonsPushed())
                 pushedNewGame = true;
-            Debug.Log("buttonPushed");
+        }
+
+        if (GUI.Button(new Rect(Screen.width / 2 - buttonWidth / 2, buttonHeight * 6 + 2 * spacing, buttonWidth, buttonHeight), "Credits"))
+        {
+            if (NoOtherButtonsPushed())
+                creditsPushed = true;
+        }
+
+        if (GUI.Button(new Rect(Screen.width / 2 - buttonWidth / 2, buttonHeight * 7 + 3 * spacing, buttonWidth, buttonHeight), "Quit"))
+        {
+            if (NoOtherButtonsPushed())
+                pushedQuit = true;
         }
 
         if (pushedNewGame)
         {
             alpha = MenuFade.FadeOut(fadeOutSpeed, fadeTexture, alpha);
             if (alpha >= 1)
+                Application.LoadLevel(2);
+        }
+
+        if (creditsPushed)
+        {
+            alpha = MenuFade.FadeOut(fadeOutSpeed, fadeTexture, alpha);
+            if (alpha >= 1)
                 Application.LoadLevel(1);
+        }
+
+        if (pushedQuit)
+        {
+            Application.Quit();
+            Debug.Log("Quit");
         }
     }
 
     bool NoOtherButtonsPushed()
     {
-        return !pushedNewGame;
+        return !pushedNewGame && !pushedQuit && !creditsPushed;
     }
 
 

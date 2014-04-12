@@ -21,7 +21,6 @@ public class CreditsScreen : MonoBehaviour
     public void OnGUI()
     {
         //Credtis
-        //Title
         TitlePos.width = Credits.width * CreditsScale;
         TitlePos.height = Credits.height * CreditsScale;
         TitlePos.x = Screen.width / 2 - TitlePos.width / 2;

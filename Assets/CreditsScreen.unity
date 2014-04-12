@@ -167,5 +167,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeTexture: {fileID: 2800000, guid: 23e9c42d3ac91614a94ab844ff1db06e, type: 3}
+  Credits: {fileID: 2800000, guid: b3b3339a3469c6943996a16cf760bfa0, type: 3}
   buttonWidthPercent: .200000003
   buttonHeightPercent: .0500000007
+  fadeSpeed: .400000006
+  CreditsHeight: .0299999993
+  CreditsScale: 1
