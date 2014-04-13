@@ -9,11 +9,13 @@ public class HealthTracker : MonoBehaviour {
     public float heartScale = 1;
     public Texture2D GameOverTexture;
     public float spacing = 3f;
-    public float vspacing = 3f;
     public float vAlignment = .15f;
+    public float vspacing = 3f;
+	public bool winner = false;
     public int currentHealth;
 
 	// Use this for initialization
+
 	void Start () {
         currentHealth = maxHealth;
 	}
@@ -41,7 +43,8 @@ public class HealthTracker : MonoBehaviour {
 
         }
     }
-	public int ChangeHealth(int healthChange)
+
+    public int ChangeHealth(int healthChange)
 	{
 		if (healthChange > 0)
 		{
@@ -56,3 +59,4 @@ public class HealthTracker : MonoBehaviour {
 		return currentHealth;
 	}
 }
+

@@ -13,6 +13,7 @@ public class PlayerControl : MonoBehaviour
 	public float hammerTime;
 	public Transform groundCheck;
 	public LayerMask whatIsGround;
+    public AudioClip jumpSound;
 	
 	bool hammering;
 	float timeLimit;
@@ -72,6 +73,7 @@ public class PlayerControl : MonoBehaviour
 			anim.SetBool("Jump", true);
 			// Add a vertical force to the player.
 			rigidbody2D.AddForce(new Vector2(0f, jumpForce));
+            audio.PlayOneShot(jumpSound);
 			
 			// Make sure the player can't jump again until the jump conditions from Update are satisfied.
 			jump = false;
@@ -107,3 +109,4 @@ public class PlayerControl : MonoBehaviour
         currentSpeed = maxSpeed;
     }
 }
+
