@@ -48,7 +48,7 @@ public class GhostMovement : MonoBehaviour {
 		//ghost attacks front
 		playerPos = player.transform.position;
 		Random.seed = (int)(Time.deltaTime * 100);
-		fireRate = Random.Range(1.0f,5.0f);
+		fireRate = Random.Range(3.0f,6.0f);
 		if (playerPos.x > ghostPos.x && Time.time > lastGhostLaunched + (10.0f/fireRate))
 		{
 			lastGhostLaunched = Time.time;

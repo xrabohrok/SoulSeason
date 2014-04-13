@@ -68,7 +68,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 8
-  speed: 0
+  speed: 1
+  vertSpeed: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

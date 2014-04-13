@@ -14,6 +14,9 @@ public class PlayerControl : MonoBehaviour
 	public Transform groundCheck;
 	public float 	 groundRadius = 0.2f;
 	public LayerMask whatIsGround;
+	//public int health = 5;
+	//
+
 	//public Component 
 	/**
 	// Update is called once per frame
@@ -141,6 +144,8 @@ public class PlayerControl : MonoBehaviour
 			jump = true;
 			
 		grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+
+
 	}
 	
 	void FixedUpdate()
@@ -148,7 +153,7 @@ public class PlayerControl : MonoBehaviour
 		
 		
 		if(!grounded) return;
-		
+
 		if(jump)
 		{
 			// Add a vertical force to the player.
@@ -158,6 +163,8 @@ public class PlayerControl : MonoBehaviour
 			jump = false;
 		}
 	}
-	
+
+
+
 	
 }

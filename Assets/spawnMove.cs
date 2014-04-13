@@ -11,6 +11,7 @@ public class spawnMove : MonoBehaviour {
 
 
 
+
 	//set self destruct timer
 	IEnumerator Start () 
 	{
@@ -35,7 +36,8 @@ public class spawnMove : MonoBehaviour {
 		
 		if (other.tag == "Player")
 		{
-			//	other.GetComponent<PlayerControl>().SetHealth(-1);
+			Camera.main.GetComponent<HealthTracker>().SetHealth(-1);
+			Debug.Log ("health hurt");
 			Destroy(gameObject);
 		}
 	}

@@ -15,9 +15,9 @@ public class CarrotItem : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		
-		if (other.tag == "Player")
+		if (other.name == "Player")
 		{
-			//	other.GetComponent<PlayerControl>().SetHealth(1);
+			Camera.main.GetComponent<HealthTracker>().SetHealth(1);
 			Destroy(gameObject);
 		}
 	}
