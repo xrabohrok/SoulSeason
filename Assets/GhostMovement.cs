@@ -11,7 +11,7 @@ public class GhostMovement : MonoBehaviour {
 	public GameObject player;
 	public Vector2 playerPos;
 	public GameObject ghostSpawn;
-	public float fireRate = 1.5f;
+	public float fireRate;
 	public float lastGhostLaunched = float.MinValue;
 	// Update is called once per frame
 
@@ -37,6 +37,7 @@ public class GhostMovement : MonoBehaviour {
 			}
 		}
 		//move ghost down to limit<>
+
 		if(up == false)
 		{
 			transform.position += transform.up*-vertSpeed*Time.deltaTime;
@@ -46,20 +47,26 @@ public class GhostMovement : MonoBehaviour {
 		}
 		//ghost attacks front
 		playerPos = player.transform.position;
-		if (playerPos.x > ghostPos.x && Time.time > lastGhostLaunched + (3.0f/fireRate))
+		Random.seed = (int)(Time.deltaTime * 100);
+		fireRate = Random.Range(1.0f,5.0f);
+		if (playerPos.x > ghostPos.x && Time.time > lastGhostLaunched + (10.0f/fireRate))
 		{
 			lastGhostLaunched = Time.time;
 			GameObject ghost;
 			ghost = Instantiate(ghostSpawn, transform.position, transform.rotation)as GameObject;
-			ghost.GetComponent<spawnMove>().setSpeed(7.0f);
+			ghost.transform.localScale = new Vector2(.25f,.25f);
+			ghost.GetComponent<spawnMove>().setSpeed(14.0f);
 		}
 		//ghost attacks back;
-		if (playerPos.x < ghostPos.x&& Time.time > lastGhostLaunched + (3.0f/fireRate))
+
+		if (playerPos.x < ghostPos.x&& Time.time > lastGhostLaunched + (10.0f/fireRate))
 		{
+			Debug.Log(fireRate);
 			lastGhostLaunched = Time.time;
 			GameObject ghost;
 			ghost = Instantiate(ghostSpawn, transform.position, transform.rotation)as GameObject;
-			ghost.GetComponent<spawnMove>().setSpeed(-7.0f);
+			ghost.transform.localScale = new Vector2(.25f,.25f);
+			ghost.GetComponent<spawnMove>().setSpeed(-14.0f);
 		}
 
 	}

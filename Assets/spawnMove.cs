@@ -7,11 +7,14 @@ public class spawnMove : MonoBehaviour {
 	// Use this for initialization
 	public float duration = 8.0f;
 	public float speed;
+	public float vertSpeed;
+
 
 
 	//set self destruct timer
 	IEnumerator Start () 
 	{
+		vertSpeed = Random.Range(-10.0f,10.0f);
 		yield return StartCoroutine(Countdown(duration));
 		Destroy(gameObject);
 	}
@@ -22,6 +25,8 @@ public class spawnMove : MonoBehaviour {
 	{
 		//set movement
 		transform.position += transform.right*speed*Time.deltaTime;
+		transform.position += transform.up*vertSpeed*Time.deltaTime;
+
 
 	}
 
