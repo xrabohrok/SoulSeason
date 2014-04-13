@@ -10,7 +10,6 @@ public class HealthTracker : MonoBehaviour {
     public Texture2D GameOverTexture;
     public float spacing = 3f;
     public float vspacing = 3f;
-	public bool winner = false;
     public float vAlignment = .15f;
     public int currentHealth;
 
@@ -24,11 +23,7 @@ public class HealthTracker : MonoBehaviour {
 	
 		if(currentHealth <= 0)
 		{
-			LevelEnd(0);
-		}
-		if(winner == true)
-		{
-			LevelEnd (1);
+			Application.LoadLevel(2);
 		}
 	}
 
@@ -58,29 +53,6 @@ public class HealthTracker : MonoBehaviour {
 		{
 			currentHealth += healthChange;
 		}
-			return currentHealth;
-	}
-	public void LevelEnd(int levelEnd)
-	{
-		int level = Application.loadedLevel;
-		if (levelEnd == 0){
-			Application.LoadLevel(0);
-			//change to bad end
-		}
-		//good end
-		if (levelEnd == 1)
-		{
-			
-			if(level == 2)
-			{
-				//load level 2
-				Application.LoadLevel(1);
-			}
-			if(level == 3)
-			{
-				//load credits
-				Application.LoadLevel(1);
-			}
-		}
+		return currentHealth;
 	}
 }

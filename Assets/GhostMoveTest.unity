@@ -2572,7 +2572,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 888651459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30, y: .808896184, z: 0}
+  m_LocalPosition: {x: -27.0643139, y: 1.20032525, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3452,7 +3452,6 @@ MonoBehaviour:
   GameOverTexture: {fileID: 0}
   spacing: -58
   vspacing: -21
-  winner: 0
   vAlignment: .150000006
   currentHealth: 0
 --- !u!114 &1361922827

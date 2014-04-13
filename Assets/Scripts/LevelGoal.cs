@@ -13,14 +13,16 @@ public class LevelGoal : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter2D(Collider2D other){
+	public void OnTriggerEnter2D(Collider2D other){
 		if (other.name =="Player")
 		{
-			Camera.main.GetComponent<HealthTracker>().LevelEnd(1);
+            Debug.Log("Win");
+			Application.LoadLevel(3);
+
 		}
 		if (other.name =="ghost")
 		{
-			Camera.main.GetComponent<HealthTracker>().LevelEnd(0);
+			Application.LoadLevel(2);
 		}
 
 
