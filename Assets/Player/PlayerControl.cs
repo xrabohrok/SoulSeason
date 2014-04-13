@@ -17,134 +17,18 @@ public class PlayerControl : MonoBehaviour
 	public float hammerTime;
 	float startingTime;
 	float endingTime;
-	float timeLimit;
 	bool hammering;
 	float tempTime;
 	float finalTime;
 
-	//public Component 
-	/**
-	// Update is called once per frame
-	void Update() 
-	{
-		//transform.Translate(Vector2.right * (moveSpeed/5) * Time.deltaTime);
-		
-		//if((Screen.width/2) >= 
-		if(grounded == false)
-		{		
-			if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
-			{
-				if(position == 0)
-				{
-					transform.position = new Vector2(transform.position.x, 0.0001f);
-				}
-				goUp();
-			}
-		
-			if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
-			{
-				if(position == 0)
-				{
-					transform.position = new Vector2(transform.position.x, -0.0001f);
-				}
-				goDown();
-			}
-		
-		
-			if(position == 1 || position == -1)
-			{
-				rigidbody2D.AddForce(new Vector2(0, (moveSpeed * position)));
-			}
-		
-			if(transform.position.y >= maxHeight)
-			{
-				//transform.position = new Vector2(transform.position.y, 0f);
-				position = 2;
-			}
-		
-			if(transform.position.y <= -maxHeight)
-			{
-				//transform.position = new Vector2(transform.position.y, 0f);
-				position = -2;
-			}
-		}
-		
-		if(transform.position.y >= 0 && position == -2)
-		{
-			position = 0;
-			maxHeight = transform.position.y + 2f;
-			rigidbody2D.velocity = new Vector2(0, 0);
-			rigidbody2D.gravityScale = 0;
-			transform.position = new Vector2(transform.position.x, 0f);
-		}
-		
-		if(transform.position.y <= 0 && position == 2)
-		{
-			position = 0;
-			maxHeight = transform.position.y + 2f;
-			rigidbody2D.velocity = new Vector2(0, 0);
-			rigidbody2D.gravityScale = 0;
-			transform.position = new Vector2(transform.position.x, 0f);
-		}
-		
-		if(position == 2 || position == -2)
-		{
-			rigidbody2D.AddForce(new Vector2(0, (-moveSpeed * (position/2))));
-		}
-		
-		//if(position > 0 && grounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)))
-		//{
-			//maxHeight = transform.position.y + 2f;
-			//rigidbody2D.AddForce(new Vector2(0, (10*moveSpeed)));		
-		//}
-		
-		if(Input.GetKey(KeyCode.RightArrow))
-		{
-			transform.Translate(Vector2.right * moveSpeed/5 * Time.deltaTime);
-		}
-		
-		if(Input.GetKey(KeyCode.LeftArrow))
-		{
-			transform.Translate(-Vector2.right * moveSpeed/5 * Time.deltaTime);
-		}
-		
-		if (grounded == true && position == 2)
-		{
-			position = 3;
-		}
-		
-		if (position == 3 && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)))
-		{
-			maxHeight = transform.position.y + 2f;
-			rigidbody2D.AddForce(new Vector2(0, (10*moveSpeed)));
-		}
-	}
 	
-	void FixedUpdate()
-	{
-		grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
-	}
+	private Animator anim;
 	
-	void goUp()
-	{
-		if(position == 0)
-		{
-			position = 1;
-		}
-	}
-	
-	void goDown()
-	{
-		if(position == 0)
-		{
-			position = -1;
-		}
-	}
-	*/
 	void Start()
 	{
-
+		anim = GetComponent<Animator>();
 	}
+	
 
 	void Update()
 	{
@@ -152,7 +36,6 @@ public class PlayerControl : MonoBehaviour
 		//messy timer for checking if hammer is active
 			startingTime = Time.deltaTime;
 			endingTime = Time.deltaTime+hammerTime;
-			timeLimit = endingTime - startingTime;
 		if(hammerTime >= 0)
 		{
 			//play animation here?
@@ -173,32 +56,25 @@ public class PlayerControl : MonoBehaviour
 
 }
 	
-	void OnCollisionEnter2D(Collision2D coll)
-		{
-		Debug.Log(hammerTime);
 
-			if(hammering == true)
-			{
-
-		if(coll.gameObject.tag == "Wall")
-				{
-
-				Destroy(coll.gameObject);
-				}
-			}
-	
-		}
-	
-
-	
+		
+		
+		
 	void FixedUpdate()
 	{
-		
-		
-		if(!grounded) return;
 
-		if(jump)
+		if(grounded)
 		{
+			anim.SetBool("Jump", false);
+		}
+		else
+		{
+			anim.SetBool("Jump", true);
+		}
+		
+		if(jump)
+		{	
+			anim.SetBool("Jump", true);
 			// Add a vertical force to the player.
 			rigidbody2D.AddForce(new Vector2(0f, jumpForce));
 			
@@ -212,6 +88,20 @@ public class PlayerControl : MonoBehaviour
 			hammerTime+=buffTimer;
 			return hammerTime;
 		}
+		
+	void OnCollisionEnter2D(Collision2D coll)
+	{
+		Debug.Log(hammerTime);
+		
+		if(hammering == true)
+		{
+			if(coll.gameObject.tag == "Wall")
+			{	
+				Destroy(coll.gameObject);
+			}
+		}
+		
+	}
 
 
 
