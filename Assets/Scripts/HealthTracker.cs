@@ -11,6 +11,7 @@ public class HealthTracker : MonoBehaviour {
     public float spacing = 3f;
     public float vspacing = 3f;
 	public bool winner = false;
+    public float vAlignment = .15f;
     public int currentHealth;
 
 	// Use this for initialization
@@ -36,7 +37,7 @@ public class HealthTracker : MonoBehaviour {
         Rect carrotPlace = new Rect(spacing, vspacing, haveHeart.width * heartScale, haveHeart.height * heartScale);
         for(int i = 0; i < maxHealth; i++)
         {
-            carrotPlace = new Rect(carrotPlace.xMin + carrotPlace.width + spacing, carrotPlace.yMax, carrotPlace.width, carrotPlace.height);
+            carrotPlace = new Rect(carrotPlace.xMin + carrotPlace.width + spacing, vAlignment * Screen.height, carrotPlace.width, carrotPlace.height);
             
             if(i < currentHealth)
             GUI.DrawTexture(carrotPlace, haveHeart);
