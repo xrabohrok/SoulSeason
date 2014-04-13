@@ -3,26 +3,27 @@ using System.Collections;
 
 public class PlayerControl : MonoBehaviour
 {
-	public float  maxSpeed = 10f;
-	public float  jumpForce = 700f;
-	public bool   jump = false;
-	public float  moveForce = 5f;
-	//public int    position = 0;
-	//public float  maxHeight;
-	
 	public bool 	 grounded = false;
-	public Transform groundCheck;
+	public bool   jump = false;
+	public float  maxSpeed = 10.8f;
+    public float slowerSpeed = 10;
+	public float  jumpForce = 700f;
+	public float  moveForce = 5f;
 	public float 	 groundRadius = 0.2f;
-	public LayerMask whatIsGround;
 	public float hammerTime;
-	float startingTime;
+	public Transform groundCheck;
+	public LayerMask whatIsGround;
+	
+    float startingTime;
 	float endingTime;
 	float timeLimit;
-	bool hammering;
 	float tempTime;
 	float finalTime;
+    float currentSpeed;
 
-	//public Component 
+	bool hammering;
+	
+    //public Component 
 	/**
 	// Update is called once per frame
 	void Update() 
@@ -143,16 +144,16 @@ public class PlayerControl : MonoBehaviour
 	*/
 	void Start()
 	{
-
+        currentSpeed = maxSpeed;
 	}
 
 	void Update()
 	{
 
 		//messy timer for checking if hammer is active
-			startingTime = Time.deltaTime;
-			endingTime = Time.deltaTime+hammerTime;
-			timeLimit = endingTime - startingTime;
+		startingTime = Time.deltaTime;
+		endingTime = Time.deltaTime+hammerTime;
+		timeLimit = endingTime - startingTime;
 		if(hammerTime >= 0)
 		{
 			//play animation here?
@@ -160,41 +161,36 @@ public class PlayerControl : MonoBehaviour
 			hammering = true;
 		}
 		else hammering = false;
-
 	
-
-		transform.Translate(Vector2.right * (maxSpeed/5) * Time.deltaTime);
-		// If the jump button is pressed and the player is grounded then the player should jump.
+        //move right, FOREVER
+        transform.Translate(Vector2.right * (currentSpeed / 5) * Time.deltaTime);
+        
+        // If the jump button is pressed and the player is grounded then the player should jump.
 		if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && grounded)
 			jump = true;
 			
 		grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
-
-
-}
+    }
 	
 	void OnCollisionEnter2D(Collision2D coll)
+	{
+	    Debug.Log(hammerTime);
+
+		if(hammering == true)
 		{
-		Debug.Log(hammerTime);
 
-			if(hammering == true)
+	        if(coll.gameObject.tag == "Wall")
 			{
-
-		if(coll.gameObject.tag == "Wall")
-				{
-
-				Destroy(coll.gameObject);
-				}
+    			Destroy(coll.gameObject);
 			}
-	
 		}
+	
+	}
 	
 
 	
 	void FixedUpdate()
 	{
-		
-		
 		if(!grounded) return;
 
 		if(jump)
@@ -207,13 +203,20 @@ public class PlayerControl : MonoBehaviour
 		}
 	}
 
-		public float SetHammer (float buffTimer )
-		{
-			hammerTime+=buffTimer;
-			return hammerTime;
-		}
+	public float SetHammer (float buffTimer )
+	{
+		hammerTime+=buffTimer;
+		return hammerTime;
+	}
 
 
+    public void SetSlow()
+    {
+        currentSpeed = slowerSpeed;
+    }
 
-	
+	public void SetFast()
+    {
+        currentSpeed = maxSpeed;
+    }
 }
