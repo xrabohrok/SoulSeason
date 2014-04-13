@@ -20,8 +20,8 @@ public class HammerItem : MonoBehaviour {
 		if (other.tag == "Player")
 		{
 		
-		//	other.GetComponent<PlayerControl>().SetHammer();
-		//	Destroy(gameObject);
+		other.GetComponent<PlayerControl>().SetHammer(5.0f);
+		Destroy(gameObject);
 		}
 	}
 

@@ -14,8 +14,13 @@ public class PlayerControl : MonoBehaviour
 	public Transform groundCheck;
 	public float 	 groundRadius = 0.2f;
 	public LayerMask whatIsGround;
-	//public int health = 5;
-	//
+	public float hammerTime;
+	float startingTime;
+	float endingTime;
+	float timeLimit;
+	bool hammering;
+	float tempTime;
+	float finalTime;
 
 	//public Component 
 	/**
@@ -136,8 +141,28 @@ public class PlayerControl : MonoBehaviour
 		}
 	}
 	*/
+	void Start()
+	{
+
+	}
+
 	void Update()
 	{
+
+		//messy timer for checking if hammer is active
+			startingTime = Time.deltaTime;
+			endingTime = Time.deltaTime+hammerTime;
+			timeLimit = endingTime - startingTime;
+		if(hammerTime >= 0)
+		{
+			//play animation here?
+			hammerTime -= Time.deltaTime;
+			hammering = true;
+		}
+		else hammering = false;
+
+	
+
 		transform.Translate(Vector2.right * (maxSpeed/5) * Time.deltaTime);
 		// If the jump button is pressed and the player is grounded then the player should jump.
 		if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && grounded)
@@ -146,7 +171,25 @@ public class PlayerControl : MonoBehaviour
 		grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
 
 
-	}
+}
+	
+	void OnCollisionEnter2D(Collision2D coll)
+		{
+		Debug.Log(hammerTime);
+
+			if(hammering == true)
+			{
+
+		if(coll.gameObject.tag == "Wall")
+				{
+
+				Destroy(coll.gameObject);
+				}
+			}
+	
+		}
+	
+
 	
 	void FixedUpdate()
 	{
@@ -163,6 +206,12 @@ public class PlayerControl : MonoBehaviour
 			jump = false;
 		}
 	}
+
+		public float SetHammer (float buffTimer )
+		{
+			hammerTime+=buffTimer;
+			return hammerTime;
+		}
 
 
 
