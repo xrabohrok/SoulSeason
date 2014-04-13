@@ -12,6 +12,7 @@ public class HealthTracker : MonoBehaviour {
     public float vspacing = 3f;
 	public bool winner = false;
     public int currentHealth;
+	public AudioClip[] endMusic;
 
 	// Use this for initialization
 	void Start () {
@@ -61,7 +62,9 @@ public class HealthTracker : MonoBehaviour {
 	}
 	public void LevelEnd(int levelEnd)
 	{
+
 		int level = Application.loadedLevel;
+
 		if (levelEnd == 0){
 			Application.LoadLevel(0);
 			//change to bad end
