@@ -79,7 +79,6 @@ public class HealthTracker : MonoBehaviour {
 			{
 				//load credits
 				Application.LoadLevel(1);
-				
 			}
 		}
 	}
