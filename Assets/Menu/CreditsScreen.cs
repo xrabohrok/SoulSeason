@@ -11,6 +11,8 @@ public class CreditsScreen : MonoBehaviour
     public Texture2D Credits;
     public float buttonWidthPercent = .20f;
     public float buttonHeightPercent = .05f;
+    public float buttonDisplacement = 0;
+    public int backButtonIndex = 0;
     public float fadeSpeed = .4f;
     public float CreditsHeight = .03f;
     public float CreditsScale = 1f;
@@ -21,11 +23,14 @@ public class CreditsScreen : MonoBehaviour
     public void OnGUI()
     {
         //Credtis
-        TitlePos.width = Credits.width * CreditsScale;
-        TitlePos.height = Credits.height * CreditsScale;
-        TitlePos.x = Screen.width / 2 - TitlePos.width / 2;
-        TitlePos.y = CreditsHeight;
-        GUI.DrawTexture(TitlePos, Credits);
+        if (Credits != null)
+        {
+            TitlePos.width = Credits.width * CreditsScale;
+            TitlePos.height = Credits.height * CreditsScale;
+            TitlePos.x = Screen.width / 2 - TitlePos.width / 2;
+            TitlePos.y = CreditsHeight;
+            GUI.DrawTexture(TitlePos, Credits);
+        }
 
         float buttonWidth = Screen.width * buttonWidthPercent;
         float buttonHeight = Screen.height * buttonHeightPercent;
@@ -40,7 +45,7 @@ public class CreditsScreen : MonoBehaviour
         }
 
         if(!FirstLaunch)
-        if (GUI.Button(new Rect(Screen.width / 2 - buttonWidth/2, buttonHeight * 3, buttonWidth , buttonHeight), "Go Back"))
+        if (GUI.Button(new Rect(Screen.width / 2 - buttonWidth/2, buttonDisplacement, buttonWidth , buttonHeight), "Go Back"))
         {
             pushedGoBack = true;
         }
@@ -50,7 +55,7 @@ public class CreditsScreen : MonoBehaviour
             alpha = MenuFade.FadeOut(fadeSpeed, fadeTexture, alpha);
             if(alpha >= 1)
             {
-                Application.LoadLevel(0);
+                Application.LoadLevel(backButtonIndex);
             }
         }
     }

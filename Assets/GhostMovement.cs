@@ -24,9 +24,10 @@ public class GhostMovement : MonoBehaviour {
 	{
 
 		// move ghost forward
-		transform.position += transform.right*speed*Time.deltaTime;
+		transform.position += transform.right * speed * Time.deltaTime;
 		ghostPos = transform.position;
-		//move ghost up to limit
+		
+        //upward motion
 		if(ghostPos.y < verticalCap && up == true)
 		{
 			transform.position += transform.up*vertSpeed*Time.deltaTime;
@@ -36,8 +37,8 @@ public class GhostMovement : MonoBehaviour {
 				up = false;
 			}
 		}
-		//move ghost down to limit<>
 
+		//downward motion
 		if(up == false)
 		{
 			transform.position += transform.up*-vertSpeed*Time.deltaTime;
@@ -45,29 +46,33 @@ public class GhostMovement : MonoBehaviour {
 				up = true;
 			}
 		}
+
+
 		//ghost attacks front
 		playerPos = player.transform.position;
 		Random.seed = (int)(Time.deltaTime * 100);
 		fireRate = Random.Range(3.0f,6.0f);
 		if (playerPos.x > ghostPos.x && Time.time > lastGhostLaunched + (10.0f/fireRate))
 		{
-			lastGhostLaunched = Time.time;
-			GameObject ghost;
-			ghost = Instantiate(ghostSpawn, transform.position, transform.rotation)as GameObject;
-			ghost.transform.localScale = new Vector2(.25f,.25f);
-			ghost.GetComponent<spawnMove>().setSpeed(14.0f);
+            fireGhost(1);
 		}
 		//ghost attacks back;
 
 		if (playerPos.x < ghostPos.x&& Time.time > lastGhostLaunched + (10.0f/fireRate))
 		{
-			Debug.Log(fireRate);
-			lastGhostLaunched = Time.time;
-			GameObject ghost;
-			ghost = Instantiate(ghostSpawn, transform.position, transform.rotation)as GameObject;
-			ghost.transform.localScale = new Vector2(.25f,.25f);
-			ghost.GetComponent<spawnMove>().setSpeed(-14.0f);
+            fireGhost(-1);
 		}
 
 	}
+
+    private void fireGhost(float direction)
+    {
+        lastGhostLaunched = Time.time;
+        GameObject ghost;
+        ghost = Instantiate(ghostSpawn, transform.position, transform.rotation) as GameObject;
+        ghost.transform.localScale = new Vector2(.25f, .25f);
+        ghost.GetComponent<spawnMove>().setSpeed(direction * 14.0f);
+    }
+
+
 }
