@@ -39,11 +39,15 @@ public class PlayerControl : MonoBehaviour
 		if(hammerTime >= 0)
 		{
 			//play animation here?
+			anim.SetBool("HammerTime", true);
 			hammerTime -= Time.deltaTime;
 			hammering = true;
 		}
-		else hammering = false;
-
+		else 
+		{
+			anim.SetBool("HammerTime", false);
+			hammering = false;
+		}
 	
 
 		transform.Translate(Vector2.right * (maxSpeed/5) * Time.deltaTime);
@@ -74,7 +78,6 @@ public class PlayerControl : MonoBehaviour
 		
 		if(jump)
 		{	
-			anim.SetBool("Jump", true);
 			// Add a vertical force to the player.
 			rigidbody2D.AddForce(new Vector2(0f, jumpForce));
 			
