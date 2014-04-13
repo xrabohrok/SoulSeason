@@ -21,6 +21,7 @@ public class PlayerCrusher : MonoBehaviour {
         {
             other.transform.position = respawnPoint.transform.position;
             other.GetComponent<PlayerControl>().SetFast();
+            GameObject.FindObjectOfType<HealthTracker>().ChangeHealth(-1);
         }
     }
 }

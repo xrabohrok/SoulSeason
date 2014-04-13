@@ -17,7 +17,7 @@ public class CarrotItem : MonoBehaviour {
 		
 		if (other.name == "Player")
 		{
-			Camera.main.GetComponent<HealthTracker>().SetHealth(1);
+			Camera.main.GetComponent<HealthTracker>().ChangeHealth(1);
 			Destroy(gameObject);
 		}
 	}

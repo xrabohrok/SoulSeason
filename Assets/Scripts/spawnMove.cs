@@ -36,7 +36,7 @@ public class spawnMove : MonoBehaviour {
 		
 		if (other.tag == "Player")
 		{
-			Camera.main.GetComponent<HealthTracker>().SetHealth(-1);
+			Camera.main.GetComponent<HealthTracker>().ChangeHealth(-1);
 			Debug.Log ("health hurt");
 			Destroy(gameObject);
 		}

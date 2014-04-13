@@ -46,7 +46,7 @@ public class HealthTracker : MonoBehaviour {
 
         }
     }
-	public int SetHealth(int healthChange)
+	public int ChangeHealth(int healthChange)
 	{
 		if (healthChange > 0)
 		{
