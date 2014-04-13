@@ -1107,56 +1107,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1.48000002, y: 4.03999996}
   m_Center: {x: 0, y: 0}
---- !u!1 &395125182
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 395125184}
-  - 212: {fileID: 395125183}
-  m_Layer: 0
-  m_Name: Elfboots
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &395125183
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 395125182}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 5562fff4e9ac5024c8a401594ac7a9f4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &395125184
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 395125182}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.64447212, y: .0439726859, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &404984139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,6 +1170,7 @@ GameObject:
   - 114: {fileID: 405880251}
   - 61: {fileID: 405880250}
   - 95: {fileID: 405880248}
+  - 82: {fileID: 405880249}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1258,6 +1209,64 @@ Animator:
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!82 &405880249
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405880246}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!61 &405880250
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1293,6 +1302,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   hammerTime: 0
+  jumpSound: {fileID: 8300000, guid: f0a6e417c37c5274cba1515c0b7e9c92, type: 3}
 --- !u!50 &405880252
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1525,9 +1535,9 @@ AudioSource:
   m_GameObject: {fileID: 435145833}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 38d62406e3953fc43a9e38f4c3a9a45b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 47b5749bc183d4247b85503bfd19c3a2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .430000007
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2580,6 +2590,14 @@ Prefab:
       propertyPath: maxSpeed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f0a6e417c37c5274cba1515c0b7e9c92, type: 3}
+    - target: {fileID: 100010, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 0}
@@ -3415,7 +3433,7 @@ GameObject:
   - 61: {fileID: 1322379600}
   m_Layer: 8
   m_Name: Brick 1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4043,7 +4061,7 @@ GameObject:
   - 61: {fileID: 1485023764}
   m_Layer: 8
   m_Name: Brick 1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
