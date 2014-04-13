@@ -80,7 +80,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.8105545, y: .372219563, z: 1}
+  m_LocalPosition: {x: -17.7082672, y: .372219563, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -91,7 +91,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.11026669, y: 4.57192373, z: 1}
+  m_LocalPosition: {x: -.878410339, y: 4.57192373, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -102,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.6900005, y: 1.76690292, z: -1}
+  m_LocalPosition: {x: -17.3010902, y: 1.76690292, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -271,7 +271,7 @@ MonoBehaviour:
   GameOverTexture: {fileID: 0}
   spacing: -58
   vspacing: -21
-  winner: 0
+  vAlignment: .150000006
   currentHealth: 0
 --- !u!124 &12400000
 Behaviour:
