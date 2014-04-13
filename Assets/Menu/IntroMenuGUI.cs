@@ -15,6 +15,12 @@ public class IntroMenuGUI : MonoBehaviour {
     public float TitleHeight = .03f;
     public float TitleScale = 1f;
     public float fadeOutSpeed = 0.4f;
+    public float verticalButtonDisp = .6f;
+    public float horizontalButtonDisp = .5f;
+
+    public int newGameIndex = 4;
+    public int creditsIndex = 2;
+
     public Texture2D fadeTexture;
 
     private Rect TitlePos;
@@ -23,28 +29,31 @@ public class IntroMenuGUI : MonoBehaviour {
     void OnGUI()
     {
         //Title
-        TitlePos.width = title.width * TitleScale;
-        TitlePos.height = title.height * TitleScale;
-        TitlePos.x = Screen.width/2 - TitlePos.width/2;
-        TitlePos.y = TitleHeight;
-        GUI.DrawTexture(TitlePos,title);
+        if (title != null)
+        {
+            TitlePos.width = title.width * TitleScale;
+            TitlePos.height = title.height * TitleScale;
+            TitlePos.x = Screen.width / 2 - TitlePos.width / 2;
+            TitlePos.y = TitleHeight;
+            GUI.DrawTexture(TitlePos, title);
+        }
 
         float buttonWidth = Screen.width * buttonWidthPercent;
         float buttonHeight = Screen.height * buttonHeightPercent;
 
-        if (GUI.Button(new Rect(Screen.width / 2 - buttonWidth/2, buttonHeight * 5, buttonWidth , buttonHeight), "New Game"))
+        if (GUI.Button(new Rect(Screen.width * horizontalButtonDisp - buttonWidth/2, Screen.height * verticalButtonDisp + buttonHeight * 1 + spacing, buttonWidth , buttonHeight), "New Game"))
         {
             if (NoOtherButtonsPushed())
                 pushedNewGame = true;
         }
 
-        if (GUI.Button(new Rect(Screen.width / 2 - buttonWidth / 2, buttonHeight * 6 + 2 * spacing, buttonWidth, buttonHeight), "Credits"))
+        if (GUI.Button(new Rect(Screen.width * horizontalButtonDisp - buttonWidth / 2, Screen.height * verticalButtonDisp + buttonHeight * 2 + 2 * spacing, buttonWidth, buttonHeight), "Credits"))
         {
             if (NoOtherButtonsPushed())
                 creditsPushed = true;
         }
 
-        if (GUI.Button(new Rect(Screen.width / 2 - buttonWidth / 2, buttonHeight * 7 + 3 * spacing, buttonWidth, buttonHeight), "Quit"))
+        if (GUI.Button(new Rect(Screen.width * horizontalButtonDisp - buttonWidth / 2, Screen.height * verticalButtonDisp + buttonHeight * 3 + 3 * spacing, buttonWidth, buttonHeight), "Quit"))
         {
             if (NoOtherButtonsPushed())
                 pushedQuit = true;
@@ -54,20 +63,20 @@ public class IntroMenuGUI : MonoBehaviour {
         {
             alpha = MenuFade.FadeOut(fadeOutSpeed, fadeTexture, alpha);
             if (alpha >= 1)
-                Application.LoadLevel(2);
+                Application.LoadLevel(newGameIndex);
         }
 
         if (creditsPushed)
         {
             alpha = MenuFade.FadeOut(fadeOutSpeed, fadeTexture, alpha);
             if (alpha >= 1)
-                Application.LoadLevel(1);
+                Application.LoadLevel(creditsIndex);
         }
 
         if (pushedQuit)
         {
             Application.Quit();
-            Debug.Log("Quit");
+            pushedQuit = false;
         }
     }
 
