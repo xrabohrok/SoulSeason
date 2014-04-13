@@ -36,7 +36,7 @@ public class HealthTracker : MonoBehaviour {
         Rect carrotPlace = new Rect(spacing, vspacing, haveHeart.width * heartScale, haveHeart.height * heartScale);
         for(int i = 0; i < maxHealth; i++)
         {
-            carrotPlace = new Rect(carrotPlace.left + carrotPlace.width + spacing, carrotPlace.top, carrotPlace.width, carrotPlace.height);
+            carrotPlace = new Rect(carrotPlace.xMin + carrotPlace.width + spacing, carrotPlace.yMax, carrotPlace.width, carrotPlace.height);
             
             if(i < currentHealth)
             GUI.DrawTexture(carrotPlace, haveHeart);

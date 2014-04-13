@@ -21,8 +21,6 @@ public class PlayerControl : MonoBehaviour
 	float tempTime;
 	float finalTime;
     float currentSpeed;
-
-	bool hammering;
 	
 	
 	private Animator anim;
