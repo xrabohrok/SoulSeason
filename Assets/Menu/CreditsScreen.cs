@@ -11,7 +11,7 @@ public class CreditsScreen : MonoBehaviour
     public Texture2D Credits;
     public float buttonWidthPercent = .20f;
     public float buttonHeightPercent = .05f;
-    public float buttonDisplacement = 0;
+    public float buttonDisplacementPercent = .8f;
     public int backButtonIndex = 0;
     public float fadeSpeed = .4f;
     public float CreditsHeight = .03f;
@@ -44,8 +44,7 @@ public class CreditsScreen : MonoBehaviour
             }
         }
 
-        if(!FirstLaunch)
-        if (GUI.Button(new Rect(Screen.width / 2 - buttonWidth/2, buttonDisplacement, buttonWidth , buttonHeight), "Go Back"))
+        else if (GUI.Button(new Rect(Screen.width / 2 - buttonWidth / 2, Screen.height * buttonDisplacementPercent, buttonWidth, buttonHeight), "Go Back"))
         {
             pushedGoBack = true;
         }

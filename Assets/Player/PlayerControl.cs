@@ -1,41 +1,37 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerControl : MonoBehaviour
 {
-	public float  maxSpeed = 10f;
-	public float  jumpForce = 700f;
-	public bool   jump = false;
-	public float  moveForce = 5f;
-	//public int    position = 0;
-	//public float  maxHeight;
-	
 	public bool 	 grounded = false;
-	public Transform groundCheck;
+	public bool   jump = false;
+	public float  maxSpeed = 10.8f;
+    public float slowerSpeed = 10;
+	public float  jumpForce = 700f;
+	public float  moveForce = 5f;
 	public float 	 groundRadius = 0.2f;
-	public LayerMask whatIsGround;
 	public float hammerTime;
-	float startingTime;
-	float endingTime;
+	public Transform groundCheck;
+	public LayerMask whatIsGround;
+	
 	bool hammering;
+	float timeLimit;
 	float tempTime;
 	float finalTime;
-
+    float currentSpeed;
+	
 	
 	private Animator anim;
 	
 	void Start()
 	{
 		anim = GetComponent<Animator>();
+        currentSpeed = maxSpeed;
 	}
 	
-
 	void Update()
 	{
 
-		//messy timer for checking if hammer is active
-			startingTime = Time.deltaTime;
-			endingTime = Time.deltaTime+hammerTime;
 		if(hammerTime >= 0)
 		{
 			//play animation here?
@@ -50,19 +46,14 @@ public class PlayerControl : MonoBehaviour
 		}
 	
 
-		transform.Translate(Vector2.right * (maxSpeed/5) * Time.deltaTime);
+		transform.Translate(Vector2.right * (currentSpeed/5) * Time.deltaTime);
+		
 		// If the jump button is pressed and the player is grounded then the player should jump.
 		if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && grounded)
 			jump = true;
 			
 		grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
-
-
-}
-	
-
-		
-		
+	}
 		
 	void FixedUpdate()
 	{
@@ -78,6 +69,7 @@ public class PlayerControl : MonoBehaviour
 		
 		if(jump)
 		{	
+			anim.SetBool("Jump", true);
 			// Add a vertical force to the player.
 			rigidbody2D.AddForce(new Vector2(0f, jumpForce));
 			
@@ -86,11 +78,11 @@ public class PlayerControl : MonoBehaviour
 		}
 	}
 
-		public float SetHammer (float buffTimer )
-		{
-			hammerTime+=buffTimer;
-			return hammerTime;
-		}
+    public float SetHammer (float buffTimer )
+    {
+        hammerTime+=buffTimer;
+        return hammerTime;
+    }
 		
 	void OnCollisionEnter2D(Collision2D coll)
 	{
@@ -103,10 +95,15 @@ public class PlayerControl : MonoBehaviour
 				Destroy(coll.gameObject);
 			}
 		}
-		
 	}
 
+    public void SetSlow()
+    {
+        currentSpeed = slowerSpeed;
+    }
 
-
-	
+	public void SetFast()
+    {
+        currentSpeed = maxSpeed;
+    }
 }
