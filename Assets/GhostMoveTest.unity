@@ -83,7 +83,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 599576}
   - 212: {fileID: 599575}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Aboveground, Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 599574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.20576859, y: 2.23464155, z: 0}
+  m_LocalPosition: {x: -8.67229652, y: 2.29999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 3715837}
   - 212: {fileID: 3715836}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mountain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 16538114}
   - 212: {fileID: 16538113}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mountain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,6 +233,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 26336512}
   - 212: {fileID: 26336511}
+  - 61: {fileID: 26336513}
   m_Layer: 0
   m_Name: Brick square
   m_TagString: Wall
@@ -261,7 +262,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &26336512
 Transform:
@@ -270,10 +271,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 26336510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.6001472, y: -4.89455557, z: 0}
+  m_LocalPosition: {x: 37, y: -3.79999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &26336513
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 26336510}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &63769691
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +295,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 63769693}
   - 212: {fileID: 63769692}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +345,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 73588270}
   - 212: {fileID: 73588269}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hill3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,8 +382,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 73588268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.2636166, y: 1.98777509, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 17.2215519, y: .00281965733, z: 0}
+  m_LocalScale: {x: 1.02400672, y: 1.02400672, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &90738682
@@ -383,7 +395,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 90738684}
   - 212: {fileID: 90738683}
-  m_Layer: 0
+  - 61: {fileID: 90738685}
+  m_Layer: 8
   m_Name: Brick
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -411,7 +424,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d1982cd23706e534580338eefc1cee68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &90738684
 Transform:
@@ -420,10 +433,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 90738682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 102.484688, y: -2.2540946, z: 0}
+  m_LocalPosition: {x: 102.484688, y: -2.45000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &90738685
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 90738682}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &137504062
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,7 +457,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 137504064}
   - 212: {fileID: 137504063}
-  m_Layer: 0
+  - 61: {fileID: 137504065}
+  m_Layer: 8
   m_Name: Brick
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -461,7 +486,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d1982cd23706e534580338eefc1cee68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &137504064
 Transform:
@@ -470,80 +495,72 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 137504062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.0837822, y: -2.25154424, z: 0}
+  m_LocalPosition: {x: 27.3308048, y: -2.45000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &230547313
-GameObject:
+--- !u!61 &137504065
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 137504062}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
+--- !u!1 &206174747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+  m_PrefabInternal: {fileID: 853151014}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 230547317}
-  - 33: {fileID: 230547316}
-  - 64: {fileID: 230547315}
-  - 23: {fileID: 230547314}
+  - 4: {fileID: 206174748}
+  - 212: {fileID: 206174749}
   m_Layer: 0
-  m_Name: Block
+  m_Name: LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &230547314
-Renderer:
+--- !u!4 &206174748
+Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 230547313}
+  m_PrefabParentObject: {fileID: 400002, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 206174747}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4986763, y: -5.81897068, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 405880247}
+--- !u!212 &206174749
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200004, guid: 7540e042601f5864a92ae9dd3d13bc8b,
+    type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 206174747}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_SortingLayerID: 0
---- !u!64 &230547315
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 230547313}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &230547316
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 230547313}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &230547317
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 230547313}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.722805, y: -4.02845478, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 013d3c987de17804b81d13fcfbb9b4cb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &232363206
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +570,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 232363208}
   - 212: {fileID: 232363207}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Aboveground, Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,57 +607,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 232363206}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.37113883e-08}
-  m_LocalPosition: {x: 157.433365, y: 2.18226433, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
---- !u!1 &240411154
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 240411156}
-  - 212: {fileID: 240411155}
-  m_Layer: 0
-  m_Name: Brick square
-  m_TagString: Wall
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &240411155
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 240411154}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &240411156
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 240411154}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.8530617, y: -4.86755848, z: 0}
+  m_LocalPosition: {x: 157.338135, y: 2.29999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -653,7 +620,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 262552260}
   - 212: {fileID: 262552259}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -690,57 +657,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 262552258}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: -4.37113883e-08}
-  m_LocalPosition: {x: 113.747604, y: 1.11989164, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
---- !u!1 &279468814
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 279468816}
-  - 212: {fileID: 279468815}
-  m_Layer: 0
-  m_Name: Brick square
-  m_TagString: Wall
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &279468815
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 279468814}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &279468816
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 279468814}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 109.011902, y: -2.16113186, z: 0}
+  m_LocalPosition: {x: 113.932007, y: -.211905599, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -753,9 +670,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 283961352}
   - 212: {fileID: 283961351}
-  m_Layer: 0
+  - 61: {fileID: 283961353}
+  m_Layer: 8
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -790,10 +708,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 283961350}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 94.5546036, y: -4.75782156, z: 0}
+  m_LocalPosition: {x: 94.568367, y: -4.745152, z: 0}
   m_LocalScale: {x: 50, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &283961353
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 283961350}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 5.11999989, y: .600000024}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &289780552
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,7 +732,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 289780554}
   - 212: {fileID: 289780553}
-  m_Layer: 0
+  - 61: {fileID: 289780555}
+  m_Layer: 8
   m_Name: Brick
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -831,7 +761,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d1982cd23706e534580338eefc1cee68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &289780554
 Transform:
@@ -840,10 +770,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 289780552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.5218163, y: -2.24552345, z: 0}
+  m_LocalPosition: {x: 62, y: -2.39544511, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &289780555
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 289780552}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &294615552
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +794,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 294615554}
   - 212: {fileID: 294615553}
-  m_Layer: 0
+  - 61: {fileID: 294615555}
+  m_Layer: 8
   m_Name: Brick square
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -881,7 +823,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &294615554
 Transform:
@@ -890,80 +832,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 294615552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 127.251701, y: .89202714, z: 0}
+  m_LocalPosition: {x: 127.384079, y: 1.00231755, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &358145175
-GameObject:
+--- !u!61 &294615555
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 358145179}
-  - 33: {fileID: 358145178}
-  - 64: {fileID: 358145177}
-  - 23: {fileID: 358145176}
-  m_Layer: 0
-  m_Name: Block
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &358145176
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 358145175}
+  m_GameObject: {fileID: 294615552}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
---- !u!64 &358145177
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 358145175}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &358145178
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 358145175}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &358145179
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 358145175}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.7476006, y: 1.21011245, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &372733895
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,7 +856,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 372733897}
   - 212: {fileID: 372733896}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mountain2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1023,7 +906,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 379992378}
   - 212: {fileID: 379992377}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Aboveground, Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1060,7 +943,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 379992376}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.37113883e-08}
-  m_LocalPosition: {x: 90.5725861, y: 2.18227577, z: 0}
+  m_LocalPosition: {x: 91.140976, y: 2.29999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1073,7 +956,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 393500133}
   - 212: {fileID: 393500132}
-  m_Layer: 0
+  - 61: {fileID: 393500134}
+  m_Layer: 8
   m_Name: Brick
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1101,7 +985,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d1982cd23706e534580338eefc1cee68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &393500133
 Transform:
@@ -1110,10 +994,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 393500131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 143.368439, y: 1.75216115, z: 0}
+  m_LocalPosition: {x: 143, y: 1.20000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &393500134
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 393500131}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &395125182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,6 +1059,194 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &404984139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 404984141}
+  - 212: {fileID: 404984140}
+  m_Layer: 9
+  m_Name: Shrubbery
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &404984140
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 404984139}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: 7039fa582041e594cb45653bb599312d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &404984141
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 404984139}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.31819153, y: -2.85023141, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &405880246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100010, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 405880247}
+  - 212: {fileID: 405880253}
+  - 50: {fileID: 405880252}
+  - 114: {fileID: 405880251}
+  - 61: {fileID: 405880250}
+  - 58: {fileID: 405880249}
+  - 95: {fileID: 405880248}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &405880247
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400010, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 405880246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.091218, y: -2.65978146, z: 0}
+  m_LocalScale: {x: .150000006, y: .150000006, z: 1}
+  m_Children:
+  - {fileID: 511441361}
+  - {fileID: 1542168051}
+  - {fileID: 206174748}
+  - {fileID: 2015238997}
+  - {fileID: 438256153}
+  m_Father: {fileID: 0}
+--- !u!95 &405880248
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: 7540e042601f5864a92ae9dd3d13bc8b,
+    type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 405880246}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e489f15657e122748897f529dacc678b, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 0
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
+--- !u!58 &405880249
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800000, guid: 7540e042601f5864a92ae9dd3d13bc8b,
+    type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 405880246}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: 3
+  m_Center: {x: 0, y: -8.36999989}
+--- !u!61 &405880250
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100000, guid: 7540e042601f5864a92ae9dd3d13bc8b,
+    type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 405880246}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 5.5, y: 14}
+  m_Center: {x: 0, y: -1.42999995}
+--- !u!114 &405880251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 7540e042601f5864a92ae9dd3d13bc8b,
+    type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 405880246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6241d88ff85964ca58b8d2194bf2f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 19
+  jumpForce: 1000
+  jump: 0
+  moveForce: 5
+  grounded: 0
+  groundCheck: {fileID: 511441361}
+  groundRadius: .200000003
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!50 &405880252
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000000, guid: 7540e042601f5864a92ae9dd3d13bc8b,
+    type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 405880246}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 5
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!212 &405880253
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200008, guid: 7540e042601f5864a92ae9dd3d13bc8b,
+    type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 405880246}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: 077d3f67852d27f42825f0fe2f84c5e1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &425639844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,7 +1256,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 425639846}
   - 212: {fileID: 425639845}
-  m_Layer: 0
+  - 61: {fileID: 425639847}
+  m_Layer: 8
   m_Name: Brick
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1201,7 +1285,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d1982cd23706e534580338eefc1cee68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &425639846
 Transform:
@@ -1210,10 +1294,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 425639844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 134.65799, y: -2.27286577, z: 0}
+  m_LocalPosition: {x: 134.65799, y: -2.45000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &425639847
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 425639844}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &435145833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,6 +1402,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+--- !u!1 &438256152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 438256153}
+  - 212: {fileID: 438256154}
+  m_Layer: 0
+  m_Name: RightLeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &438256153
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 438256152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.39153004, y: -6.35708904, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 405880247}
+--- !u!212 &438256154
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200000, guid: 7540e042601f5864a92ae9dd3d13bc8b,
+    type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 438256152}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: 563cdaaff069c1b4a904962d3d472976, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &456184446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,7 +1462,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 456184448}
   - 212: {fileID: 456184447}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Aboveground, Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1353,7 +1499,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 456184446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57.1111603, y: 2.18227196, z: 0}
+  m_LocalPosition: {x: 57.6446075, y: 2.26650572, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1366,6 +1512,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 463509099}
   - 212: {fileID: 463509098}
+  - 61: {fileID: 463509100}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -1394,7 +1541,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 886d5586f5d2a86439ded24b168c5e14, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8af55ca7bce12504faae47cb789ae9cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &463509099
 Transform:
@@ -1403,10 +1550,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 463509097}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.91734028, y: -.725112438, z: 0}
+  m_LocalPosition: {x: 4.91734028, y: -.711441398, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &463509100
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 463509097}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 4.78000021, y: 1.10000002}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &465659947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,7 +1574,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 465659949}
   - 212: {fileID: 465659948}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Aboveground, Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1453,7 +1611,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 465659947}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.37113883e-08}
-  m_LocalPosition: {x: 23.6873665, y: 2.23967385, z: 0}
+  m_LocalPosition: {x: 24.146965, y: 2.29999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1466,7 +1624,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 495026420}
   - 212: {fileID: 495026419}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1507,6 +1665,32 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &511441360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 511441361}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &511441361
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 511441360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -11.4571609, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_Children: []
+  m_Father: {fileID: 405880247}
 --- !u!1 &511686968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,7 +1700,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 511686970}
   - 212: {fileID: 511686969}
-  m_Layer: 0
+  - 61: {fileID: 511686971}
+  m_Layer: 8
   m_Name: Brick square
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1544,7 +1729,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &511686970
 Transform:
@@ -1553,10 +1738,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 511686968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.2121849, y: .244643569, z: 0}
+  m_LocalPosition: {x: 59, y: 1.29999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &511686971
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 511686968}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &549985105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,7 +1762,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 549985107}
   - 212: {fileID: 549985106}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mountain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1616,7 +1812,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 566384475}
   - 212: {fileID: 566384474}
-  m_Layer: 0
+  - 61: {fileID: 566384476}
+  m_Layer: 8
   m_Name: Brick square
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1644,7 +1841,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &566384475
 Transform:
@@ -1653,10 +1850,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 566384473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 114.966217, y: -4.02561092, z: 0}
+  m_LocalPosition: {x: 115.054451, y: -2.87859201, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &566384476
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 566384473}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &598705048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,6 +1874,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 598705050}
   - 212: {fileID: 598705049}
+  - 61: {fileID: 598705051}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -1694,7 +1903,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 886d5586f5d2a86439ded24b168c5e14, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8af55ca7bce12504faae47cb789ae9cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &598705050
 Transform:
@@ -1707,6 +1916,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &598705051
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598705048}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 4.78000021, y: 1.10000002}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &633784600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1766,7 +1986,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 681901509}
   - 212: {fileID: 681901508}
-  m_Layer: 0
+  - 61: {fileID: 681901510}
+  m_Layer: 8
   m_Name: Brick square
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1794,7 +2015,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &681901509
 Transform:
@@ -1803,10 +2024,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 681901507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.0947914, y: -3.48704433, z: 0}
+  m_LocalPosition: {x: 12.2999601, y: -2.45000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &681901510
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 681901507}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &687417392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,7 +2048,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 687417394}
   - 212: {fileID: 687417393}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mountain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1853,7 +2085,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 687417392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 131.312347, y: -.0388913155, z: 0}
+  m_LocalPosition: {x: 129.072678, y: -.678776741, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1866,7 +2098,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 696968641}
   - 212: {fileID: 696968640}
-  m_Layer: 0
+  - 61: {fileID: 696968642}
+  m_Layer: 8
   m_Name: Brick square
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1894,7 +2127,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &696968641
 Transform:
@@ -1903,10 +2136,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 696968639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 123.627106, y: -.867495835, z: 0}
+  m_LocalPosition: {x: 124, y: -.0734065473, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &696968642
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 696968639}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &703079956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1957,76 +2201,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &710446163
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 710446167}
-  - 33: {fileID: 710446166}
-  - 64: {fileID: 710446165}
-  - 23: {fileID: 710446164}
-  m_Layer: 0
-  m_Name: Block
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &710446164
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 710446163}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
---- !u!64 &710446165
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 710446163}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &710446166
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 710446163}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &710446167
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 710446163}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.3559952, y: -4.02845478, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &749312082
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,7 +2210,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 749312084}
   - 212: {fileID: 749312083}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2136,7 +2310,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 795465138}
   - 212: {fileID: 795465137}
-  m_Layer: 0
+  - 61: {fileID: 795465139}
+  m_Layer: 8
   m_Name: Brick square
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2164,7 +2339,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &795465138
 Transform:
@@ -2173,10 +2348,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 795465136}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 106.305389, y: -4.8676405, z: 0}
+  m_LocalPosition: {x: 105.62159, y: -2.90447283, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &795465139
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 795465136}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &825102622
 GameObject:
   m_ObjectHideFlags: 0
@@ -2186,7 +2372,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 825102624}
   - 212: {fileID: 825102623}
-  m_Layer: 0
+  - 61: {fileID: 825102625}
+  m_Layer: 8
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2214,7 +2401,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 886d5586f5d2a86439ded24b168c5e14, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8af55ca7bce12504faae47cb789ae9cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &825102624
 Transform:
@@ -2223,10 +2410,73 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 825102622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.7274227, y: 3.18572998, z: 0}
+  m_LocalPosition: {x: 32.367012, y: .207891703, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &825102625
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825102622}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 4.78000021, y: 1.10000002}
+  m_Center: {x: 0, y: 0}
+--- !u!1001 &853151014
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400010, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -14.091218
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.65978146
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+      propertyPath: whatIsGround.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+      propertyPath: jumpForce
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+      propertyPath: maxSpeed
+      value: 19
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+  m_RootGameObject: {fileID: 405880246}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &866597132
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,7 +2486,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 866597134}
   - 212: {fileID: 866597133}
-  m_Layer: 0
+  - 61: {fileID: 866597136}
+  m_Layer: 8
   m_Name: Brick
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2264,7 +2515,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d1982cd23706e534580338eefc1cee68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &866597134
 Transform:
@@ -2273,10 +2524,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 866597132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 85.5239105, y: -2.25409508, z: 0}
+  m_LocalPosition: {x: 85.5239105, y: -2.45000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &866597136
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 866597132}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &888651459
 GameObject:
   m_ObjectHideFlags: 0
@@ -2310,7 +2572,7 @@ MonoBehaviour:
   verticalCap: 2
   ghostPos: {x: 0, y: 0}
   up: 1
-  player: {fileID: 1286290837}
+  player: {fileID: 405880246}
   playerPos: {x: 0, y: 0}
   ghostSpawn: {fileID: 100000, guid: f77ef7592d3733540bdac290f34bfa7d, type: 2}
   fireRate: 1.5
@@ -2349,6 +2611,56 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &926297902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 926297904}
+  - 212: {fileID: 926297903}
+  m_Layer: 0
+  m_Name: Aboveground, Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &926297903
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 926297902}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: -10
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: e34f46dba1f51904eb30934b6f00b430, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &926297904
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 926297902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.4995537, y: 2.04393363, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &936563955
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,7 +2670,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 936563957}
   - 212: {fileID: 936563956}
-  m_Layer: 0
+  - 61: {fileID: 936563958}
+  m_Layer: 8
   m_Name: Brick square
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2386,7 +2699,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &936563957
 Transform:
@@ -2395,80 +2708,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 936563955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 98.907608, y: -4.80749607, z: 0}
+  m_LocalPosition: {x: 98.907608, y: -2.45000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &970765490
-GameObject:
+--- !u!61 &936563958
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 970765494}
-  - 33: {fileID: 970765493}
-  - 64: {fileID: 970765492}
-  - 23: {fileID: 970765491}
-  m_Layer: 0
-  m_Name: Block
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &970765491
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 970765490}
+  m_GameObject: {fileID: 936563955}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
---- !u!64 &970765492
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 970765490}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &970765493
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 970765490}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &970765494
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 970765490}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.0896034, y: -4.02845478, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &981251281
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,7 +2732,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 981251283}
   - 212: {fileID: 981251282}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mountain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2528,7 +2782,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 993401396}
   - 212: {fileID: 993401395}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2628,7 +2882,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1134840194}
   - 212: {fileID: 1134840193}
-  m_Layer: 0
+  - 61: {fileID: 1134840195}
+  m_Layer: 8
   m_Name: Brick square
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2656,7 +2911,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1134840194
 Transform:
@@ -2665,10 +2920,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1134840192}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 134.735809, y: 2.31757355, z: 0}
+  m_LocalPosition: {x: 134.735809, y: 3.29999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &1134840195
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1134840192}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1135583689
 GameObject:
   m_ObjectHideFlags: 0
@@ -2678,6 +2944,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1135583691}
   - 212: {fileID: 1135583690}
+  - 61: {fileID: 1135583692}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -2706,7 +2973,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 886d5586f5d2a86439ded24b168c5e14, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8af55ca7bce12504faae47cb789ae9cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1135583691
 Transform:
@@ -2715,10 +2982,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1135583689}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.99914169, y: -1.0752126, z: 0}
+  m_LocalPosition: {x: -8.93619442, y: -1.0752126, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &1135583692
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1135583689}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 4.78000021, y: 1.10000002}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1167525230
 GameObject:
   m_ObjectHideFlags: 0
@@ -2728,7 +3006,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1167525232}
   - 212: {fileID: 1167525231}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2778,7 +3056,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1221619299}
   - 212: {fileID: 1221619298}
-  m_Layer: 0
+  - 61: {fileID: 1221619300}
+  m_Layer: 8
   m_Name: Brick square
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2806,7 +3085,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1221619299
 Transform:
@@ -2815,60 +3094,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1221619297}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.3490295, y: .244639993, z: 0}
+  m_LocalPosition: {x: 56, y: 1.29999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &1243562512
-GameObject:
+--- !u!61 &1221619300
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1243562514}
-  - 212: {fileID: 1243562513}
-  m_Layer: 0
-  m_Name: Brick square
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1243562513
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1243562512}
+  m_GameObject: {fileID: 1221619297}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &1243562514
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1243562512}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.8732452, y: -.792923689, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1274867198
 GameObject:
   m_ObjectHideFlags: 0
@@ -2878,7 +3118,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1274867200}
   - 212: {fileID: 1274867199}
-  m_Layer: 0
+  - 61: {fileID: 1274867201}
+  m_Layer: 8
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2906,7 +3147,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 886d5586f5d2a86439ded24b168c5e14, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8af55ca7bce12504faae47cb789ae9cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1274867200
 Transform:
@@ -2915,110 +3156,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1274867198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 146.729431, y: .239306554, z: 0}
+  m_LocalPosition: {x: 146.130356, y: .106958285, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &1286290837
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1286290839}
-  - 212: {fileID: 1286290838}
-  - 61: {fileID: 1286290840}
-  - 50: {fileID: 1286290841}
-  - 114: {fileID: 1286290842}
-  m_Layer: 0
-  m_Name: jaegerdrawn
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1286290838
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1286290837}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 5bcf41dd321e18c4aa0f284e67d18386, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &1286290839
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1286290837}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.3617439, y: -2.79264545, z: 0}
-  m_LocalScale: {x: .767144501, y: .767144501, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
---- !u!61 &1286290840
+--- !u!61 &1274867201
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1286290837}
+  m_GameObject: {fileID: 1274867198}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 3.27999973, y: 3.19999981}
+  m_Size: {x: 4.78000021, y: 1.10000002}
   m_Center: {x: 0, y: 0}
---- !u!50 &1286290841
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1286290837}
-  m_Mass: 9.99999975e-05
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
---- !u!114 &1286290842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1286290837}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b32a368924d30bd4a9b92cabd93ec5d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 10
-  jumpForce: 700
-  jump: 0
-  moveForce: 5
-  grounded: 0
-  groundCheck: {fileID: 0}
-  groundRadius: .200000003
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!1 &1290627466
 GameObject:
   m_ObjectHideFlags: 0
@@ -3028,7 +3180,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1290627468}
   - 212: {fileID: 1290627467}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3069,6 +3221,156 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &1305580861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1305580863}
+  - 212: {fileID: 1305580862}
+  m_Layer: 0
+  m_Name: Aboveground, Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1305580862
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305580861}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: -10
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: e34f46dba1f51904eb30934b6f00b430, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1305580863
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305580861}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 157.252426, y: 2.01362276, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &1322379597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1322379599}
+  - 212: {fileID: 1322379598}
+  m_Layer: 8
+  m_Name: Brick 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1322379598
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1322379597}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1322379599
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1322379597}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 73.4520416, y: 4.47022343, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &1323206008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1323206010}
+  - 212: {fileID: 1323206009}
+  m_Layer: 0
+  m_Name: Aboveground, Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1323206009
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1323206008}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: -10
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: e34f46dba1f51904eb30934b6f00b430, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1323206010
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1323206008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 56.9548645, y: 1.99614716, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1356969450
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,6 +3380,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1356969452}
   - 212: {fileID: 1356969451}
+  - 61: {fileID: 1356969453}
   m_Layer: 0
   m_Name: Brick square
   m_TagString: Wall
@@ -3106,7 +3409,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1356969452
 Transform:
@@ -3115,10 +3418,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1356969450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.9292984, y: -4.89455509, z: 0}
+  m_LocalPosition: {x: 34, y: -3.79646254, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &1356969453
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1356969450}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1375702279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3128,7 +3442,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1375702281}
   - 212: {fileID: 1375702280}
-  m_Layer: 0
+  - 61: {fileID: 1375702282}
+  m_Layer: 8
   m_Name: Brick square
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3156,7 +3471,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1375702281
 Transform:
@@ -3165,10 +3480,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1375702279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43.6848869, y: -4.89455795, z: 0}
+  m_LocalPosition: {x: 43, y: -3.79999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &1375702282
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1375702279}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.5, y: 1.5}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1450659800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3178,7 +3504,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1450659802}
   - 212: {fileID: 1450659801}
-  m_Layer: 0
+  - 61: {fileID: 1450659803}
+  m_Layer: 8
   m_Name: Brick square
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3206,7 +3533,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1450659802
 Transform:
@@ -3215,10 +3542,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1450659800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 120.619804, y: -1.80026603, z: 0}
+  m_LocalPosition: {x: 120.818329, y: -1.0723505, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &1450659803
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1450659800}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1457222592
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,7 +3566,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1457222594}
   - 212: {fileID: 1457222593}
-  m_Layer: 0
+  - 61: {fileID: 1457222595}
+  m_Layer: 8
   m_Name: Brick square
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3256,7 +3595,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1457222594
 Transform:
@@ -3265,10 +3604,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1457222592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 117.793015, y: -2.82272243, z: 0}
+  m_LocalPosition: {x: 117.903305, y: -1.87422597, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &1457222595
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1457222592}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1475653166
 GameObject:
   m_ObjectHideFlags: 0
@@ -3278,7 +3628,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1475653168}
   - 212: {fileID: 1475653167}
-  m_Layer: 0
+  - 61: {fileID: 1475653169}
+  m_Layer: 8
   m_Name: Brick square
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3306,7 +3657,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1475653168
 Transform:
@@ -3315,10 +3666,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1475653166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 139.122162, y: 2.42201042, z: 0}
+  m_LocalPosition: {x: 139.276566, y: 3.29999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &1475653169
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1475653166}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1482777059
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,7 +3690,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1482777061}
   - 212: {fileID: 1482777060}
-  m_Layer: 0
+  - 61: {fileID: 1482777062}
+  m_Layer: 8
   m_Name: Brick
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3356,7 +3719,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d1982cd23706e534580338eefc1cee68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1482777061
 Transform:
@@ -3365,8 +3728,81 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1482777059}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 143.368439, y: -2.21584511, z: 0}
+  m_LocalPosition: {x: 143, y: -2.45000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!61 &1482777062
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482777059}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
+--- !u!1 &1485023763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1485023766}
+  - 212: {fileID: 1485023765}
+  - 61: {fileID: 1485023764}
+  m_Layer: 8
+  m_Name: Brick 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1485023764
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1485023763}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &1485023765
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1485023763}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1485023766
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1485023763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 47, y: -1.49440634, z: 0}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1512928359
@@ -3378,6 +3814,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1512928361}
   - 212: {fileID: 1512928360}
+  - 61: {fileID: 1512928362}
   m_Layer: 0
   m_Name: Brick square
   m_TagString: Wall
@@ -3406,7 +3843,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1512928361
 Transform:
@@ -3415,10 +3852,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1512928359}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.1975784, y: -4.894557, z: 0}
+  m_LocalPosition: {x: 40, y: -3.79999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &1512928362
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1512928359}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1522303946
 GameObject:
   m_ObjectHideFlags: 0
@@ -3478,7 +3926,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1528789211}
   - 212: {fileID: 1528789210}
-  m_Layer: 0
+  - 61: {fileID: 1528789212}
+  m_Layer: 8
   m_Name: Brick
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3506,7 +3955,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d1982cd23706e534580338eefc1cee68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1528789211
 Transform:
@@ -3515,32 +3964,55 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1528789209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 123.645325, y: -2.25409412, z: 0}
+  m_LocalPosition: {x: 124, y: -2.45000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &1545823243
-GameObject:
+--- !u!61 &1528789212
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1528789209}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
+--- !u!1 &1542168050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+  m_PrefabInternal: {fileID: 853151014}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1545823245}
-  - 212: {fileID: 1545823244}
+  - 4: {fileID: 1542168051}
+  - 212: {fileID: 1542168052}
   m_Layer: 0
-  m_Name: Brick square
-  m_TagString: Wall
+  m_Name: LeftArm
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!212 &1545823244
+--- !u!4 &1542168051
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 1542168050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.149168015, y: -2.33758831, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 405880247}
+--- !u!212 &1542168052
 SpriteRenderer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1545823243}
+  m_PrefabParentObject: {fileID: 21200006, guid: 7540e042601f5864a92ae9dd3d13bc8b,
+    type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 1542168050}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -3554,21 +4026,10 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b168f555b370c24082b14e634a254e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &1545823245
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1545823243}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.0947971, y: -4.88567257, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &1573568118
 GameObject:
   m_ObjectHideFlags: 0
@@ -3578,7 +4039,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1573568120}
   - 212: {fileID: 1573568119}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3615,7 +4076,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1573568118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 139.911758, y: .449018121, z: 0}
+  m_LocalPosition: {x: 139.932251, y: -.22712481, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3628,7 +4089,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1593939731}
   - 212: {fileID: 1593939730}
-  m_Layer: 0
+  - 61: {fileID: 1593939732}
+  m_Layer: 8
   m_Name: Brick square
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3656,7 +4118,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03418d1c6153034e8521a333f073186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1593939731
 Transform:
@@ -3669,6 +4131,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &1593939732
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1593939729}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 1.37}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1595467044
 GameObject:
   m_ObjectHideFlags: 0
@@ -3678,7 +4151,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1595467046}
   - 212: {fileID: 1595467045}
-  m_Layer: 0
+  - 61: {fileID: 1595467047}
+  m_Layer: 8
   m_Name: Brick
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3706,7 +4180,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d1982cd23706e534580338eefc1cee68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1595467046
 Transform:
@@ -3715,7 +4189,68 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1595467044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 73.0636444, y: -2.25409365, z: 0}
+  m_LocalPosition: {x: 73, y: -2.45000005, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!61 &1595467047
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1595467044}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
+--- !u!1 &1606732479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1606732481}
+  - 212: {fileID: 1606732480}
+  m_Layer: 0
+  m_Name: Aboveground, Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1606732480
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606732479}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: -10
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: e34f46dba1f51904eb30934b6f00b430, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1606732481
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606732479}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 90.501236, y: 2.01361084, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3728,7 +4263,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1619155294}
   - 212: {fileID: 1619155293}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mountain2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3778,7 +4313,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1623216950}
   - 212: {fileID: 1623216949}
-  m_Layer: 0
+  - 61: {fileID: 1623216951}
+  m_Layer: 8
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3806,7 +4342,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 886d5586f5d2a86439ded24b168c5e14, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8af55ca7bce12504faae47cb789ae9cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1623216950
 Transform:
@@ -3819,6 +4355,67 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &1623216951
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1623216948}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 4.78000021, y: 1.10000002}
+  m_Center: {x: 0, y: 0}
+--- !u!1 &1626688881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1626688883}
+  - 212: {fileID: 1626688882}
+  m_Layer: 0
+  m_Name: Aboveground, Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1626688882
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1626688881}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: -10
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: e34f46dba1f51904eb30934b6f00b430, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1626688883
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1626688881}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.0467253, y: 2.02646899, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1645314463
 GameObject:
   m_ObjectHideFlags: 0
@@ -3828,7 +4425,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1645314465}
   - 212: {fileID: 1645314464}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trees2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3865,107 +4462,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1645314463}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.53144646, y: .752364457, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
---- !u!1 &1713284066
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1713284068}
-  - 212: {fileID: 1713284067}
-  m_Layer: 0
-  m_Name: Brick square
-  m_TagString: Wall
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1713284067
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1713284066}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &1713284068
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1713284066}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 73.0636444, y: -.87283802, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
---- !u!1 &1721096148
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1721096150}
-  - 212: {fileID: 1721096149}
-  m_Layer: 0
-  m_Name: Brick square
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1721096149
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1721096148}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &1721096150
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1721096148}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.8504486, y: -3.49099064, z: 0}
+  m_LocalPosition: {x: 9.45442295, y: -.705615938, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3978,7 +4475,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1727076357}
   - 212: {fileID: 1727076356}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4028,7 +4525,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1730505187}
   - 212: {fileID: 1730505186}
-  m_Layer: 0
+  - 61: {fileID: 1730505188}
+  m_Layer: 8
   m_Name: Brick
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4056,7 +4554,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d1982cd23706e534580338eefc1cee68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1730505187
 Transform:
@@ -4065,80 +4563,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1730505185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.8732452, y: -2.20881724, z: 0}
+  m_LocalPosition: {x: 53, y: -2.45000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &1750052624
-GameObject:
+--- !u!61 &1730505188
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1750052628}
-  - 33: {fileID: 1750052627}
-  - 64: {fileID: 1750052626}
-  - 23: {fileID: 1750052625}
-  m_Layer: 0
-  m_Name: Block
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &1750052625
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1750052624}
+  m_GameObject: {fileID: 1730505185}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
---- !u!64 &1750052626
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1750052624}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1750052627
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1750052624}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1750052628
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1750052624}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43.7357254, y: -4.02845478, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1769857288
 GameObject:
   m_ObjectHideFlags: 0
@@ -4198,7 +4637,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1868615450}
   - 212: {fileID: 1868615449}
-  m_Layer: 0
+  - 61: {fileID: 1868615452}
+  m_Layer: 8
   m_Name: Brick
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4226,7 +4666,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d1982cd23706e534580338eefc1cee68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1868615450
 Transform:
@@ -4235,10 +4675,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1868615448}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50.7582741, y: -2.20881581, z: 0}
+  m_LocalPosition: {x: 50, y: -2.44999981, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &1868615452
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1868615448}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1917238266
 GameObject:
   m_ObjectHideFlags: 0
@@ -4248,7 +4699,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1917238268}
   - 212: {fileID: 1917238267}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Billboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4285,7 +4736,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1917238266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.90236044, y: -.378019392, z: 0}
+  m_LocalPosition: {x: -3.85551286, y: -.885342538, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4298,7 +4749,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1929336061}
   - 212: {fileID: 1929336060}
-  m_Layer: 0
+  - 61: {fileID: 1929336062}
+  m_Layer: 8
   m_Name: Brick
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4326,7 +4778,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d1982cd23706e534580338eefc1cee68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1929336061
 Transform:
@@ -4335,10 +4787,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1929336059}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 148.238281, y: -2.30631256, z: 0}
+  m_LocalPosition: {x: 148.238281, y: -2.45000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &1929336062
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1929336059}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1940679466
 GameObject:
   m_ObjectHideFlags: 0
@@ -4348,7 +4811,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1940679468}
   - 212: {fileID: 1940679467}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CaveSign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4398,7 +4861,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1940943601}
   - 212: {fileID: 1940943600}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hill2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4435,7 +4898,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1940943599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.9232712, y: 1.77406883, z: 0}
+  m_LocalPosition: {x: 23.7384529, y: .24799633, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4448,7 +4911,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1967372338}
   - 212: {fileID: 1967372337}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4489,73 +4952,103 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &1996349210
+--- !u!1 &1972072918
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1996349214}
-  - 33: {fileID: 1996349213}
-  - 64: {fileID: 1996349212}
-  - 23: {fileID: 1996349211}
+  - 4: {fileID: 1972072920}
+  - 212: {fileID: 1972072919}
   m_Layer: 0
-  m_Name: Block
+  m_Name: Aboveground, Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &1996349211
-Renderer:
+--- !u!212 &1972072919
+SpriteRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1996349210}
+  m_GameObject: {fileID: 1972072918}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_SortingLayerID: 0
---- !u!64 &1996349212
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1996349210}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1996349213
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1996349210}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1996349214
+  m_Sprite: {fileID: 21300000, guid: e34f46dba1f51904eb30934b6f00b430, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1972072920
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1996349210}
+  m_GameObject: {fileID: 1972072918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.2823868, y: 1.21011245, z: 0}
+  m_LocalPosition: {x: 123.873123, y: 1.99615049, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &1989094536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1989094538}
+  - 212: {fileID: 1989094537}
+  m_Layer: 0
+  m_Name: Aboveground, Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1989094537
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1989094536}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: -10
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: e34f46dba1f51904eb30934b6f00b430, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1989094538
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1989094536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 190.583954, y: 2.04140615, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4605,7 +5098,108 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2014844809}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.1035271, y: 4.77701616, z: 0}
+  m_LocalPosition: {x: 32.2283936, y: 2.04181647, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &2015238996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2015238997}
+  - 212: {fileID: 2015238998}
+  m_Layer: 0
+  m_Name: RightArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2015238997
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 7540e042601f5864a92ae9dd3d13bc8b, type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 2015238996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.57518387, y: -1.96717739, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 405880247}
+--- !u!212 &2015238998
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200002, guid: 7540e042601f5864a92ae9dd3d13bc8b,
+    type: 2}
+  m_PrefabInternal: {fileID: 853151014}
+  m_GameObject: {fileID: 2015238996}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: 8aabbdb4c2da22b4cbc6fb892f9e61fd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2031847761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2031847763}
+  - 212: {fileID: 2031847762}
+  m_Layer: 9
+  m_Name: Shrubbery
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &2031847762
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2031847761}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: 7039fa582041e594cb45653bb599312d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &2031847763
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2031847761}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 119.998482, y: -2.51193643, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4618,7 +5212,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2070459674}
   - 212: {fileID: 2070459673}
-  m_Layer: 0
+  - 61: {fileID: 2070459675}
+  m_Layer: 8
   m_Name: Brick
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4646,7 +5241,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d1982cd23706e534580338eefc1cee68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &2070459674
 Transform:
@@ -4655,10 +5250,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2070459672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 110.473579, y: -2.19394875, z: 0}
+  m_LocalPosition: {x: 110, y: -2.45000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &2070459675
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2070459672}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &2076338428
 GameObject:
   m_ObjectHideFlags: 0
@@ -4668,7 +5274,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2076338430}
   - 212: {fileID: 2076338429}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Aboveground, Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4705,7 +5311,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2076338428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 124.093674, y: 2.10758781, z: 0}
+  m_LocalPosition: {x: 124.093674, y: 2.29999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4718,7 +5324,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2094564316}
   - 212: {fileID: 2094564315}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trees2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4768,7 +5374,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2106068157}
   - 212: {fileID: 2106068156}
-  m_Layer: 0
+  - 61: {fileID: 2106068159}
+  m_Layer: 8
   m_Name: Brick
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4796,7 +5403,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d1982cd23706e534580338eefc1cee68, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69be665fba925214d90a7a24ffbb7e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &2106068157
 Transform:
@@ -4805,10 +5412,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2106068155}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 78.6667023, y: -2.31423831, z: 0}
+  m_LocalPosition: {x: 78.6667023, y: -2.45000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &2106068159
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2106068155}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.48000002, y: 4.03999996}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &2113085070
 GameObject:
   m_ObjectHideFlags: 0
@@ -4818,7 +5436,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2113085072}
   - 212: {fileID: 2113085071}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hill3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4868,7 +5486,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2118943206}
   - 212: {fileID: 2118943205}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Boulders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4906,56 +5524,6 @@ Transform:
   m_GameObject: {fileID: 2118943204}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 88.8816605, y: .652011871, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
---- !u!1 &2126261474
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2126261476}
-  - 212: {fileID: 2126261475}
-  m_Layer: 0
-  m_Name: Brick square
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &2126261475
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2126261474}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 72a3c565eaa7b2541a54c1f03898841a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &2126261476
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2126261474}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 73.0785904, y: .507865429, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
